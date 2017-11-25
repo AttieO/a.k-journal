@@ -44,10 +44,20 @@ header, footer {
 nav {
     float: center;
     max-width: 300px;
-    background: url("http://cdn.paper4pc.com/images/5-centimeters-per-second-wallpaper-8.jpg");
-    background-size: 375px 210px;
+    /*background-size: 375px 210px;*/
     margin: 0;
     padding: 2em;
+      /* The image used */
+    background-image: url("http://cdn.paper4pc.com/images/5-centimeters-per-second-wallpaper-8.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav ul {
     list-style-type: none;
